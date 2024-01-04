@@ -79,10 +79,10 @@ void Error_Handler(void);
 #define DIR33_GPIO_Port GPIOC
 #define DIR34_Pin GPIO_PIN_5
 #define DIR34_GPIO_Port GPIOC
-#define EPD33_Pin GPIO_PIN_2
-#define EPD33_GPIO_Port GPIOB
 #define EPD34_Pin GPIO_PIN_7
 #define EPD34_GPIO_Port GPIOE
+#define EPD33_Pin GPIO_PIN_8
+#define EPD33_GPIO_Port GPIOE
 #define EPD23_Pin GPIO_PIN_12
 #define EPD23_GPIO_Port GPIOE
 #define EPD24_Pin GPIO_PIN_13

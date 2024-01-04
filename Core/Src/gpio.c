@@ -70,9 +70,9 @@ void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOD, DIR41_Pin|DIR42_Pin|DIR43_Pin|DIR44_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : PEPin PEPin PEPin PEPin
-                           PEPin PEPin PEPin */
+                           PEPin PEPin PEPin PEPin */
   GPIO_InitStruct.Pin = EPD51_Pin|EPD52_Pin|EPD53_Pin|EPD54_Pin
-                          |EPD34_Pin|EPD23_Pin|EPD24_Pin;
+                          |EPD34_Pin|EPD33_Pin|EPD23_Pin|EPD24_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
@@ -94,12 +94,6 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(SPI1_NSS_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : PtPin */
-  GPIO_InitStruct.Pin = EPD33_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(EPD33_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PEPin PEPin PEPin */
   GPIO_InitStruct.Pin = DIR23_Pin|DIR24_Pin|MOTOR_PWR_Pin;
