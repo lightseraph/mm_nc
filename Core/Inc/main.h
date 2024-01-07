@@ -57,14 +57,6 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define EPD51_Pin GPIO_PIN_3
-#define EPD51_GPIO_Port GPIOE
-#define EPD52_Pin GPIO_PIN_4
-#define EPD52_GPIO_Port GPIOE
-#define EPD53_Pin GPIO_PIN_5
-#define EPD53_GPIO_Port GPIOE
-#define EPD54_Pin GPIO_PIN_6
-#define EPD54_GPIO_Port GPIOE
 #define DIR51_Pin GPIO_PIN_0
 #define DIR51_GPIO_Port GPIOC
 #define DIR52_Pin GPIO_PIN_1
@@ -79,14 +71,6 @@ void Error_Handler(void);
 #define DIR33_GPIO_Port GPIOC
 #define DIR34_Pin GPIO_PIN_5
 #define DIR34_GPIO_Port GPIOC
-#define EPD34_Pin GPIO_PIN_7
-#define EPD34_GPIO_Port GPIOE
-#define EPD33_Pin GPIO_PIN_8
-#define EPD33_GPIO_Port GPIOE
-#define EPD23_Pin GPIO_PIN_12
-#define EPD23_GPIO_Port GPIOE
-#define EPD24_Pin GPIO_PIN_13
-#define EPD24_GPIO_Port GPIOE
 #define DIR23_Pin GPIO_PIN_14
 #define DIR23_GPIO_Port GPIOE
 #define DIR24_Pin GPIO_PIN_15
@@ -109,22 +93,6 @@ void Error_Handler(void);
 #define DIR21_GPIO_Port GPIOC
 #define DIR22_Pin GPIO_PIN_11
 #define DIR22_GPIO_Port GPIOC
-#define EPD21_Pin GPIO_PIN_12
-#define EPD21_GPIO_Port GPIOC
-#define EPD22_Pin GPIO_PIN_0
-#define EPD22_GPIO_Port GPIOD
-#define EPD31_Pin GPIO_PIN_1
-#define EPD31_GPIO_Port GPIOD
-#define EPD32_Pin GPIO_PIN_2
-#define EPD32_GPIO_Port GPIOD
-#define EPD41_Pin GPIO_PIN_3
-#define EPD41_GPIO_Port GPIOD
-#define EPD42_Pin GPIO_PIN_4
-#define EPD42_GPIO_Port GPIOD
-#define EPD43_Pin GPIO_PIN_5
-#define EPD43_GPIO_Port GPIOD
-#define EPD44_Pin GPIO_PIN_6
-#define EPD44_GPIO_Port GPIOD
 #define I2C_SDA_Pin GPIO_PIN_6
 #define I2C_SDA_GPIO_Port GPIOB
 #define I2C_SCL_Pin GPIO_PIN_7
