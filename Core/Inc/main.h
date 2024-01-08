@@ -71,6 +71,15 @@ void Error_Handler(void);
 #define DIR33_GPIO_Port GPIOC
 #define DIR34_Pin GPIO_PIN_5
 #define DIR34_GPIO_Port GPIOC
+#define SPI_IRQ_Pin GPIO_PIN_10
+#define SPI_IRQ_GPIO_Port GPIOE
+#define SPI_IRQ_EXTI_IRQn EXTI15_10_IRQn
+#define SYNC0_Pin GPIO_PIN_11
+#define SYNC0_GPIO_Port GPIOE
+#define SYNC0_EXTI_IRQn EXTI15_10_IRQn
+#define SYNC1_Pin GPIO_PIN_12
+#define SYNC1_GPIO_Port GPIOE
+#define SYNC1_EXTI_IRQn EXTI15_10_IRQn
 #define DIR23_Pin GPIO_PIN_14
 #define DIR23_GPIO_Port GPIOE
 #define DIR24_Pin GPIO_PIN_15
