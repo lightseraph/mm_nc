@@ -54,8 +54,8 @@ void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOC, DIR51_Pin|DIR52_Pin|DIR53_Pin|DIR54_Pin
-                          |DIR33_Pin|DIR34_Pin|DIR31_Pin|DIR32_Pin
-                          |DIR21_Pin|DIR22_Pin, GPIO_PIN_RESET);
+                          |DIR33_Pin|DIR34_Pin|DIR32_Pin|DIR31_Pin
+                          |DIR22_Pin|DIR21_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(SPI1_NSS_GPIO_Port, SPI1_NSS_Pin, GPIO_PIN_RESET);
@@ -67,14 +67,14 @@ void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOB, SPI2_NSS_Pin|I2C_SDA_Pin|I2C_SCL_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOD, DIR41_Pin|DIR42_Pin|DIR43_Pin|DIR44_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOD, DIR42_Pin|DIR41_Pin|DIR44_Pin|DIR43_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : PCPin PCPin PCPin PCPin
                            PCPin PCPin PCPin PCPin
                            PCPin PCPin */
   GPIO_InitStruct.Pin = DIR51_Pin|DIR52_Pin|DIR53_Pin|DIR54_Pin
-                          |DIR33_Pin|DIR34_Pin|DIR31_Pin|DIR32_Pin
-                          |DIR21_Pin|DIR22_Pin;
+                          |DIR33_Pin|DIR34_Pin|DIR32_Pin|DIR31_Pin
+                          |DIR22_Pin|DIR21_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -108,7 +108,7 @@ void MX_GPIO_Init(void)
   HAL_GPIO_Init(SPI2_NSS_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PDPin PDPin PDPin PDPin */
-  GPIO_InitStruct.Pin = DIR41_Pin|DIR42_Pin|DIR43_Pin|DIR44_Pin;
+  GPIO_InitStruct.Pin = DIR42_Pin|DIR41_Pin|DIR44_Pin|DIR43_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
